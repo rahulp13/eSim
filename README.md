@@ -20,10 +20,10 @@ Refer How_to_install file for eSim installation on Windows.
 
 ## Note while installation
 Ensure that :-
-	1. eSim installation folder is "C:\Fossee\"
-	2. Python installation folder is "C:\Python27\"
-	3. "PyQt4, matplotlib, numpy, pyparsing, dateutil and six" installation folders are "C:\Python27\"
-	4. Kicad installation folder is "C:\Program Files (x86)\KiCad" for 64-bit and "C:\Program Files\KiCad" for 32-bit 
+1. eSim installation folder is "C:\Fossee\"
+2. Python installation folder is "C:\Python27\"
+3. "PyQt4, matplotlib, numpy, pyparsing, dateutil and six" installation folders are "C:\Python27\"
+4. Kicad installation folder is "C:\Program Files (x86)\KiCad" for 64-bit and "C:\Program Files\KiCad" for 32-bit 
 
 
 ## For using the Cvpcb feature of KiCad in offline/online mode in Ubuntu:
