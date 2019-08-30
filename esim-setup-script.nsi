@@ -78,7 +78,7 @@ VIAddVersionKey "FileDescription" "eSim Installer"
 ;--------------------------------
 
 Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-OutFile "Installer.exe"
+OutFile "eSim-Installer.exe"
 
 
 ;Installer Sections
@@ -169,7 +169,7 @@ Section -Prerequisites
 
 
     MessageBox MB_OK "Setting Permissions..."
-      Exec "$EXEDIR\dependencies\permission (x86).bat"
+      ExecWait "$EXEDIR\dependencies\permission (x86).bat"
 
   ${Else}
     
@@ -187,7 +187,7 @@ Section -Prerequisites
 
 
     MessageBox MB_OK "Setting Permissions..."
-      Exec "$EXEDIR\dependencies\permission.bat"
+      ExecWait "$EXEDIR\dependencies\permission.bat"
 
  ${EndIf}    
 		
