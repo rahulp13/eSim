@@ -14,11 +14,6 @@
 
 ;General
 
-;Name and file
-	Name "eSim"
-	OutFile "Setup.exe"
-  
-
 !define PRODUCT_NAME "eSim" 
 !define PRODUCT_VERSION "1.1.2.0"
 !define VERSION "1.1.2.0"
@@ -82,8 +77,8 @@ VIAddVersionKey "FileDescription" "eSim Installer"
 
 ;--------------------------------
 
-;Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-;OutFile "Installer.exe"
+Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
+OutFile "Installer.exe"
 
 
 ;Installer Sections
@@ -115,9 +110,7 @@ SetOutPath "$INSTDIR\eSim"
 CreateDirectory "$PROFILE\AppData\Roaming\kicad"
 ; will replace the kicad folder. If there is not one, it will create
 CopyFiles "$PROFILE\AppData\Roaming\kicad\fp-lib-table" "$PROFILE\AppData\Roaming\kicad\fp-lib-table-backup"
-CopyFiles "$PROFILE\AppData\Roaming\kicad\fp-lib-table-online" "$PROFILE\AppData\Roaming\kicad\fp-lib-table-online-backup"
 CopyFiles "$EXEDIR\dependencies\OfflineFiles\fp-lib-table" "$PROFILE\AppData\Roaming\kicad\"
-CopyFiles "$EXEDIR\dependencies\OfflineFiles\fp-lib-table-online" "$PROFILE\AppData\Roaming\kicad\"
 SectionEnd
 
 Section -Prerequisites
@@ -151,12 +144,15 @@ Section -Prerequisites
  
  
   MessageBox MB_OK "Installing KiCad"
-  ExecWait "$EXEDIR\dependencies\kicad-4.0.7-i686.exe"
+    ExecWait "$EXEDIR\dependencies\kicad-4.0.7-i686.exe"
+
+
   Goto endActiveSync
   endActiveSync:
  
 
   ${If} ${RunningX64}
+    
 		${EnvVarUpdate} $0 "PATH" "A" "HKLM" "C:\Program Files (x86)\KiCad\bin"
 		CopyFiles "$EXEDIR\dependencies\library\*.lib" "C:\Program Files (x86)\KiCad\share\library"
 		CopyFiles "$EXEDIR\dependencies\library\*.dcm" "C:\Program Files (x86)\KiCad\share\library"
@@ -169,7 +165,12 @@ Section -Prerequisites
 		CopyFiles "$EXEDIR\dependencies\OfflineFiles\TerminalBlock_Altech_AK300-2_P5.00mm.kicad_mod" "C:\Program Files (x86)\KiCad\share\kicad\modules\Connectors_Terminal_Blocks.pretty\"
 		CopyFiles "$EXEDIR\dependencies\OfflineFiles\TO-220-3_Vertical.kicad_mod" "C:\Program Files (x86)\KiCad\share\kicad\modules\TO_SOT_Packages_THT.pretty\"
 
- ${Else}
+
+    MessageBox MB_OK "Setting Permissions..."
+      Exec "$EXEDIR\dependencies\permission (x86).bat"
+
+  ${Else}
+    
 		${EnvVarUpdate} $0 "PATH" "A" "HKLM" "C:\Program Files\KiCad\bin"
 		CopyFiles "$EXEDIR\dependencies\library\*.lib" "C:\Program Files\KiCad\share\library"
 		CopyFiles "$EXEDIR\dependencies\library\*.dcm" "C:\Program Files\KiCad\share\library"
@@ -181,6 +182,11 @@ Section -Prerequisites
 
 		CopyFiles "$EXEDIR\dependencies\OfflineFiles\TerminalBlock_Altech_AK300-2_P5.00mm.kicad_mod" "C:\Program Files\KiCad\share\kicad\modules\Connectors_Terminal_Blocks.pretty\"
 		CopyFiles "$EXEDIR\dependencies\OfflineFiles\TO-220-3_Vertical.kicad_mod" "C:\Program Files\KiCad\share\kicad\modules\TO_SOT_Packages_THT.pretty\"
+
+
+    MessageBox MB_OK "Setting Permissions..."
+      Exec "$EXEDIR\dependencies\permission.bat"
+
  ${EndIf}    
 		
  ;Setting Env Variable for ngspice 
