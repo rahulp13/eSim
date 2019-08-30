@@ -1,43 +1,16 @@
 EESchema Schematic File Version 2
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
+LIBS:lm7805-rescue
 LIBS:eSim_Analog
 LIBS:eSim_Devices
 LIBS:eSim_Digital
 LIBS:eSim_Hybrid
 LIBS:eSim_Miscellaneous
+LIBS:eSim_Plot
 LIBS:eSim_Power
+LIBS:eSim_PSpice
 LIBS:eSim_Sources
 LIBS:eSim_Subckt
 LIBS:eSim_User
-LIBS:eSim_Plot
-LIBS:eSim_PSpice
 LIBS:lm7805-cache
 EELAYER 25 0
 EELAYER END
@@ -109,17 +82,6 @@ F 3 "" H 1300 3350 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L eSim_NPN Q1
-U 1 1 5CE41586
-P 1850 2350
-F 0 "Q1" H 1750 2400 50  0000 R CNN
-F 1 "eSim_NPN" H 1800 2500 50  0000 R CNN
-F 2 "" H 2050 2450 29  0000 C CNN
-F 3 "" H 1850 2350 60  0000 C CNN
-	1    1850 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R5
 U 1 1 5CE418C5
 P 1950 4600
@@ -156,7 +118,7 @@ Wire Wire Line
 	1650 2350 1250 2350
 Connection ~ 1250 2350
 $Comp
-L eSim_NPN Q2
+L eSim_NPN-RESCUE-lm7805 Q2
 U 1 1 5CE41D6C
 P 2650 3350
 F 0 "Q2" H 2550 3400 50  0000 R CNN
@@ -167,7 +129,7 @@ F 3 "" H 2650 3350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L eSim_NPN Q4
+L eSim_NPN-RESCUE-lm7805 Q4
 U 1 1 5CE41E26
 P 3100 4100
 F 0 "Q4" H 3000 4150 50  0000 R CNN
@@ -189,7 +151,7 @@ F 3 "" H 2750 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L eSim_NPN Q3
+L eSim_NPN-RESCUE-lm7805 Q3
 U 1 1 5CE41EFE
 P 2850 4650
 F 0 "Q3" H 2750 4700 50  0000 R CNN
@@ -237,7 +199,7 @@ Wire Wire Line
 	2750 4850 2750 5200
 Connection ~ 2750 5200
 $Comp
-L eSim_NPN Q6
+L eSim_NPN-RESCUE-lm7805 Q6
 U 1 1 5CE424FB
 P 3650 4650
 F 0 "Q6" H 3550 4700 50  0000 R CNN
@@ -264,7 +226,7 @@ Wire Wire Line
 	3200 5250 3750 5250
 Connection ~ 3200 5200
 $Comp
-L eSim_NPN Q7
+L eSim_NPN-RESCUE-lm7805 Q7
 U 1 1 5CE427DA
 P 3700 2750
 F 0 "Q7" H 3600 2800 50  0000 R CNN
@@ -275,7 +237,7 @@ F 3 "" H 3700 2750 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L eSim_NPN Q8
+L eSim_NPN-RESCUE-lm7805 Q8
 U 1 1 5CE428D0
 P 3700 3400
 F 0 "Q8" H 3600 3450 50  0000 R CNN
@@ -286,7 +248,7 @@ F 3 "" H 3700 3400 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L eSim_NPN Q12
+L eSim_NPN-RESCUE-lm7805 Q12
 U 1 1 5CE4293A
 P 4350 3000
 F 0 "Q12" H 4250 3050 50  0000 R CNN
@@ -397,7 +359,7 @@ F 3 "" H 4200 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L eSim_NPN Q10
+L eSim_NPN-RESCUE-lm7805 Q10
 U 1 1 5CE43705
 P 4100 2200
 F 0 "Q10" H 4000 2250 50  0000 R CNN
@@ -443,7 +405,7 @@ Wire Wire Line
 	2200 2400 2200 5200
 Connection ~ 2200 5200
 $Comp
-L eSim_NPN Q11
+L eSim_NPN-RESCUE-lm7805 Q11
 U 1 1 5CE4439E
 P 4300 4400
 F 0 "Q11" H 4200 4450 50  0000 R CNN
@@ -454,7 +416,7 @@ F 3 "" H 4300 4400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L eSim_NPN Q13
+L eSim_NPN-RESCUE-lm7805 Q13
 U 1 1 5CE44419
 P 4600 4800
 F 0 "Q13" H 4500 4850 50  0000 R CNN
@@ -554,7 +516,7 @@ Wire Wire Line
 Connection ~ 4200 1950
 Connection ~ 4750 3450
 $Comp
-L eSim_NPN Q15
+L eSim_NPN-RESCUE-lm7805 Q15
 U 1 1 5CE463AD
 P 5400 2150
 F 0 "Q15" H 5300 2200 50  0000 R CNN
@@ -649,7 +611,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 2150 5600 2150
 $Comp
-L eSim_NPN Q16
+L eSim_NPN-RESCUE-lm7805 Q16
 U 1 1 5CE4907A
 P 6550 1600
 F 0 "Q16" H 6450 1650 50  0000 R CNN
@@ -660,7 +622,7 @@ F 3 "" H 6550 1600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L eSim_NPN Q17
+L eSim_NPN-RESCUE-lm7805 Q17
 U 1 1 5CE4942E
 P 7300 1950
 F 0 "Q17" H 7200 2000 50  0000 R CNN
@@ -782,4 +744,15 @@ Wire Wire Line
 	7300 3000 7450 3000
 Connection ~ 7300 2650
 Connection ~ 2500 5200
+$Comp
+L eSim_NPN-RESCUE-lm7805 Q1
+U 1 1 5D63A1DF
+P 1850 2350
+F 0 "Q1" H 1750 2400 50  0000 R CNN
+F 1 "eSim_NPN" H 1800 2500 50  0000 R CNN
+F 2 "" H 2050 2450 29  0000 C CNN
+F 3 "" H 1850 2350 60  0000 C CNN
+	1    1850 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

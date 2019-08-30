@@ -1,5 +1,5 @@
 * /home/saurabh/installer_main_workshop/esim-1.1.2/examples/bjt_amplifier/bjt_amplifier.cir
-Transient Analysis  Wed Aug 21 12:31:35  2019
+Transient Analysis  Wed Aug 28 15:29:50  2019
 --------------------------------------------------------------------------------
 Index   time            v1#branch       v2#branch       
 --------------------------------------------------------------------------------

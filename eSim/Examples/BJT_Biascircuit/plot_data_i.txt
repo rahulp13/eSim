@@ -1,5 +1,5 @@
 * /home/saurabh/installer_main_workshop/esim-1.1.2/examples/bjt_biascircuit/bjt_biascircuit.cir
-DC transfer characteristic  Wed Aug 21 12:29:24  2019
+DC transfer characteristic  Wed Aug 28 15:31:18  2019
 --------------------------------------------------------------------------------
 Index   i-sweep         v1#branch       v_u1#branch     
 --------------------------------------------------------------------------------

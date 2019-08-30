@@ -1,5 +1,5 @@
 * /home/saurabh/installer_main_workshop/esim-1.1.2/examples/bjt_biascircuit/bjt_biascircuit.cir
-DC transfer characteristic  Wed Aug 21 12:29:24  2019
+DC transfer characteristic  Wed Aug 28 15:31:18  2019
 --------------------------------------------------------------------------------
 Index   i-sweep         ib              net-_q1-pad1_   net-_q1-pad2_   
 --------------------------------------------------------------------------------
@@ -1271,7 +1271,7 @@ Index   i-sweep         ib              net-_q1-pad1_   net-_q1-pad2_
 1205	1.000000e+01	-2.49999e+09	7.500014e+00	-2.49999e+09	
 
 * /home/saurabh/installer_main_workshop/esim-1.1.2/examples/bjt_biascircuit/bjt_biascircuit.cir
-DC transfer characteristic  Wed Aug 21 12:29:24  2019
+DC transfer characteristic  Wed Aug 28 15:31:18  2019
 --------------------------------------------------------------------------------
 Index   i-sweep         net-_r1-pad1_   vce             
 --------------------------------------------------------------------------------

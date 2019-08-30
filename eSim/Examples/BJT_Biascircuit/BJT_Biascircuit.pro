@@ -1,6 +1,6 @@
-update=08/23/19 13:27:58
+update=08/29/19 11:40:32
 version=1
-last_client=kicad
+last_client=eeschema
 [general]
 version=1
 RootSch=
@@ -69,3 +69,4 @@ LibName35=linear
 LibName36=regul
 LibName37=74xx
 LibName38=cmos4000
+LibName39=eSim_Plot

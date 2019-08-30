@@ -1,4 +1,4 @@
-update=06/02/19 14:32:01
+update=Wed Aug 28 15:36:02 2019
 version=1
 last_client=eeschema
 [general]
@@ -31,15 +31,16 @@ NetIExt=net
 version=1
 LibDir=../../../kicadSchematicLibrary
 [eeschema/libraries]
-LibName1=eSim_Analog
-LibName2=eSim_Devices
-LibName3=eSim_Digital
-LibName4=eSim_Hybrid
-LibName5=eSim_Miscellaneous
-LibName6=eSim_Plot
-LibName7=eSim_Power
-LibName8=eSim_PSpice
-LibName9=eSim_Sources
-LibName10=eSim_Subckt
-LibName11=eSim_User
+LibName1=LM7812-rescue
+LibName2=eSim_Analog
+LibName3=eSim_Devices
+LibName4=eSim_Digital
+LibName5=eSim_Hybrid
+LibName6=eSim_Miscellaneous
+LibName7=eSim_Plot
+LibName8=eSim_Power
+LibName9=eSim_PSpice
+LibName10=eSim_Sources
+LibName11=eSim_Subckt
+LibName12=eSim_User
 

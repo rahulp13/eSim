@@ -110,7 +110,9 @@ SetOutPath "$INSTDIR\eSim"
 CreateDirectory "$PROFILE\AppData\Roaming\kicad"
 ; will replace the kicad folder. If there is not one, it will create
 CopyFiles "$PROFILE\AppData\Roaming\kicad\fp-lib-table" "$PROFILE\AppData\Roaming\kicad\fp-lib-table-backup"
+CopyFiles "$PROFILE\AppData\Roaming\kicad\fp-lib-table-online" "$PROFILE\AppData\Roaming\kicad\fp-lib-table-online-backup"
 CopyFiles "$EXEDIR\dependencies\OfflineFiles\fp-lib-table" "$PROFILE\AppData\Roaming\kicad\"
+CopyFiles "$EXEDIR\dependencies\OfflineFiles\fp-lib-table-online" "$PROFILE\AppData\Roaming\kicad\"
 SectionEnd
 
 Section -Prerequisites

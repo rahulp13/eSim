@@ -1,43 +1,15 @@
 EESchema Schematic File Version 2
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
 LIBS:eSim_Analog
 LIBS:eSim_Devices
 LIBS:eSim_Digital
 LIBS:eSim_Hybrid
 LIBS:eSim_Miscellaneous
+LIBS:eSim_Plot
 LIBS:eSim_Power
+LIBS:eSim_PSpice
 LIBS:eSim_Sources
 LIBS:eSim_Subckt
 LIBS:eSim_User
-LIBS:eSim_Plot
-LIBS:eSim_PSpice
 LIBS:lm7805-cache
 EELAYER 25 0
 EELAYER END
@@ -107,17 +79,6 @@ F 2 "" H 1300 3350 60  0000 C CNN
 F 3 "" H 1300 3350 60  0000 C CNN
 	1    1250 3350
 	0    -1   -1   0   
-$EndComp
-$Comp
-L eSim_NPN Q1
-U 1 1 5CE41586
-P 1850 2350
-F 0 "Q1" H 1750 2400 50  0000 R CNN
-F 1 "eSim_NPN" H 1800 2500 50  0000 R CNN
-F 2 "" H 2050 2450 29  0000 C CNN
-F 3 "" H 1850 2350 60  0000 C CNN
-	1    1850 2350
-	1    0    0    -1  
 $EndComp
 $Comp
 L R R5
@@ -782,4 +743,15 @@ Wire Wire Line
 	7300 3000 7450 3000
 Connection ~ 7300 2650
 Connection ~ 2500 5200
+$Comp
+L eSim_NPN Q1
+U 1 1 5D63A1DF
+P 1850 2350
+F 0 "Q1" H 1750 2400 50  0000 R CNN
+F 1 "eSim_NPN" H 1800 2500 50  0000 R CNN
+F 2 "" H 2050 2450 29  0000 C CNN
+F 3 "" H 1850 2350 60  0000 C CNN
+	1    1850 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

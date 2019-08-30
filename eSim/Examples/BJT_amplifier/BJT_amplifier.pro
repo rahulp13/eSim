@@ -1,5 +1,5 @@
-update=08/23/19 13:26:55
-last_client=kicad
+update=Wed Aug 28 15:29:36 2019
+last_client=eeschema
 [eeschema]
 version=1
 LibDir=
