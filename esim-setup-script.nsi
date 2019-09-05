@@ -26,7 +26,7 @@ VIAddVersionKey  "ProductName" "eSim"
 VIProductVersion "${PRODUCT_VERSION}"
 VIFileVersion "${VERSION}"
 VIAddVersionKey "FileVersion" "${VERSION}"
-VIAddVersionKey  "CompanyName" "FOSSEE @iitb"
+VIAddVersionKey  "CompanyName" "FOSSEE @ IIT-B"
 VIAddVersionKey "LegalCopyright" "Copyright (C) 2007 Free Software Foundation,  Inc."
 VIAddVersionKey "FileDescription" "eSim Installer"
 
@@ -53,7 +53,7 @@ VIAddVersionKey "FileDescription" "eSim Installer"
 
 ;Pages
   
-  ;!insertmacro MUI_PAGE_LICENSE "LICENSE.rtf"
+  !insertmacro MUI_PAGE_LICENSE "LICENSE.rtf"
   !insertmacro MUI_PAGE_COMPONENTS
   !insertmacro MUI_PAGE_DIRECTORY
   
